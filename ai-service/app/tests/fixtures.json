@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "description": "Greeting or casual wish",
+    "text": "Good morning, have a blessed day",
+    "expected_is_claim": false,
+    "expected_verdict": "not_a_claim",
+    "expected_language": "en"
+  },
+  {
+    "id": 2,
+    "description": "Viral WhatsApp charging chain hoax",
+    "text": "WhatsApp will become chargeable from tomorrow unless you forward this message to 10 people. Once forwarded, your logo will turn blue.",
+    "expected_is_claim": true,
+    "expected_verdict": "likely_false",
+    "expected_tactics": ["chain_forward", "urgency"]
+  },
+  {
+    "id": 3,
+    "description": "Fraudulent government laptop scheme with phishing link",
+    "text": "Govt giving free laptops to all students in 2026, click this link http://free-gov-laptops.fake and enter your Aadhaar details",
+    "expected_is_claim": true,
+    "expected_verdict": "likely_false",
+    "expected_tactics": ["miracle_claim", "urgency"]
+  },
+  {
+    "id": 4,
+    "description": "Out-of-context disaster rumor claiming mass collapse",
+    "text": "Massive earthquake hit Delhi today, 50 buildings collapsed! Stay safe everyone.",
+    "expected_is_claim": true,
+    "expected_verdict": "misleading",
+    "expected_tactics": ["fear_appeal", "old_content_reused"]
+  },
+  {
+    "id": 5,
+    "description": "Obscure local rumour with no coverage",
+    "text": "Ramesh uncle from colony said water supply will be cut tomorrow",
+    "expected_is_claim": true,
+    "expected_verdict": "unverified"
+  },
+  {
+    "id": 6,
+    "description": "Hinglish version of WhatsApp paid chain message",
+    "text": "Kal se WhatsApp paid ho jayega sabke liye, jaldi se 10 logo ko forward karo warna band ho jayega!",
+    "expected_is_claim": true,
+    "expected_verdict": "likely_false",
+    "expected_language": "hinglish"
+  }
+]
+
